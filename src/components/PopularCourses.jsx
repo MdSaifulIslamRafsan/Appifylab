@@ -17,10 +17,10 @@ const PopularCourses = () => {
                 <p className="bg-[#F3F2FF] inline-block px-5 py-2 rounded-md">Design</p>
                 <h4 className="font-bold">The 6 Steps to Building a 
                 powerful Personal brand</h4>
-                <p calssName="flex"><MdEventNote />
+                <p className="flex items-center gap-2"><MdEventNote />
                 <span>2 Lesoons</span></p>
-                <div className="flex justify-between" >
-                    <p calssName="flex"><FaUsers />
+                <div className="flex items-center justify-between" >
+                    <p className="flex items-center gap-2"><FaUsers />
                    <span> 30 Students
                     enrolled</span></p>
                     <button className="btn btn-outline">View Course</button>
@@ -31,10 +31,10 @@ const PopularCourses = () => {
                 <p className="bg-[#F3F2FF] inline-block px-5 py-2 rounded-md">Design</p>
                 <h4 className="font-bold">The 6 Steps to Building a 
                 powerful Personal brand</h4>
-                <p calssName="flex"><MdEventNote />
+                <p className="flex items-center gap-2"><MdEventNote />
                 <span>2 Lesoons</span></p>
-                <div className="flex justify-between" >
-                    <p calssName="flex"><FaUsers />
+                <div className="flex items-center justify-between" >
+                    <p className="flex items-center gap-2"><FaUsers />
                    <span> 30 Students
                     enrolled</span></p>
                     <button className="btn btn-outline">View Course</button>
@@ -45,10 +45,10 @@ const PopularCourses = () => {
                 <p className="bg-[#F3F2FF] inline-block px-5 py-2 rounded-md">Design</p>
                 <h4 className="font-bold">The 6 Steps to Building a 
                 powerful Personal brand</h4>
-                <p calssName="flex"><MdEventNote />
+                <p className="flex items-center gap-2"><MdEventNote />
                 <span>2 Lesoons</span></p>
-                <div className="flex justify-between" >
-                    <p calssName="flex"><FaUsers />
+                <div className="flex items-center justify-between" >
+                    <p className="flex items-center gap-2"><FaUsers />
                    <span> 30 Students
                     enrolled</span></p>
                     <button className="btn btn-outline">View Course</button>
