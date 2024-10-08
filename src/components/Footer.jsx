@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Footer = () => {
     return (
-        <div className="max-w-[1440px] py-10 grid grid-cols-3 justify-center gap-5 w-10/12 mx-auto text-white">
+        <div className="max-w-[1440px] py-10 grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 justify-center gap-5 w-10/12 mx-auto text-white">
             <div>
             <Image width="140" height="40" src="/assets/logo.png" alt="logo" />
             <p className="tracking-[.5em] mt-10">CONTACT</p>
