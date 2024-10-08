@@ -1,10 +1,17 @@
 "use client"
+import {IoIosArrowBack , IoIosArrowForward } from "react-icons/io";
 import Image from "next/image";
 import Link from "next/link";
 import { MdEventNote } from "react-icons/md";
 import { FaUsers } from "react-icons/fa";
-
+import { useState } from 'react';
 const PopularCourses = () => {
+    const [pageNumber,setPageNumber] = useState(0)
+    const page = 5 
+    const updatePageNumber = (num)=>{
+        if((num > (page - 1)) || (0 > num)){ return setPageNumber(0) }
+        setPageNumber(num)
+    }
     return (
         <div className="max-w-[1440px] my-10 w-10/12 mx-auto">
             <div className="flex justify-between">
@@ -56,15 +63,23 @@ const PopularCourses = () => {
                 </div>
             </div>
             <div className="flex mt-10 justify-center">
-            <div className="join">
-  <button className="join-item btn">{"<"}</button>
-  <button className="join-item btn">1</button>
-  <button className="join-item btn">2</button>
-  <button className="join-item btn btn-disabled">...</button>
-  <button className="join-item btn">99</button>
-  <button className="join-item btn">100</button>
-  <button className="join-item btn">{">"}</button>
-</div>
+            <div className='flex select-none justify-center items-center gap-5 '>
+        {/* left arrow */}
+        <div onClick={()=>{updatePageNumber(pageNumber - 1)}} className=' hover:scale-110 scale-100 transition-all duration-200 cursor-pointer hover:bg-zinc-200 px-1 py-1 rounded-full'>
+        <IoIosArrowBack />
+
+        </div> 
+            <div className='flex justify-center items-center gap-2 '>
+                 {[...Array(page).keys()].map((item,ind) => <div onClick={()=>{setPageNumber(item)}} className={`cursor-pointer hover:scale-110 scale-100 transition-all duration-200 px-5 ${pageNumber === item ? 'bg-[#4942BB] text-white':'bg-white'} border-zinc-300  font-semibold   py-3 rounded-full`} key={item}>
+                {item + 1}
+              </div>)}
+            </div>
+            {/* right arrow */}
+              <div  onClick={()=>{updatePageNumber(pageNumber + 1)}}>
+              <IoIosArrowForward />
+
+              </div>
+        </div>
             </div>
         </div>
     );
