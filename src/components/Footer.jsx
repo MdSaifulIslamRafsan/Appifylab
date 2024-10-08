@@ -23,7 +23,7 @@ const Footer = () => {
             <div>
                 <p className="font-bold">Stay up to date</p>
                 <p className="mb-5 text-[#CFD1D6]">Stay Informed On How You Can Make a Difference</p>
-                <input type="email" placeholder="Your email address"  className="py-2 px-4 rounded-3xl"/>
+                <input type="email" placeholder="Your email address"  className="py-2 bg-[#31215F] px-4 rounded-3xl"/>
                 <button className="btn rounded-3xl bg-[#EAE34A] hover:bg-[#EAE34A] px-5 ml-3">Submit</button>
                
             </div>
